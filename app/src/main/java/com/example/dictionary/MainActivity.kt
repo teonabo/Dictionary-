@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         resultTextView = findViewById(R.id.resultTextView)
         clearButton = findViewById(R.id.clearButton)
 
-        loadDictionary() // Load dictionary from file
+        loadDICTIONARY() // Load dictionary from file
 
         searchButton.setOnClickListener {
             searchDictionary()
@@ -42,8 +42,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun loadDictionary() {
-        val resources
+    private fun loadDICTIONARY() {
         val inputStream: InputStream = resources.openRawResource(R.raw.dictionary)
         val reader = BufferedReader(InputStreamReader(inputStream))
         var line: String?
